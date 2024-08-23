@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -73,45 +74,89 @@ footer h3 {
     margin-top: 0;
 }
 
-#ojoJPEG{
+#ojoJPEG {
     border-radius: 15px;
 }
 
 .dobleLista-contenedor {
     display: flex;
     justify-content: space-evenly;
-
-    .dobleLista {
-        display: flex;
-        flex-direction: column;
-
-        .lista{
-            display: flex;
-        }
-
-        img{
-            height: 300px;
-            width: auto;
-            border-radius: 15px;
-        }
-    }
-
-    .imagenes-dobleLista{
-        display: flex;
-        align-items: center;
-    }
 }
 
-.artistico-contenedor{
+.dobleLista {
+    display: flex;
+    flex-direction: column;
+}
 
-    .artistico-imagenes{
-        display: flex;
-        justify-content: space-evenly;
+.lista {
+    display: flex;
+}
 
-        img{
-            height: 300px;
-            width: auto;
-            border-radius: 15px;
-        }
-    }
+.dobleLista img {
+    height: 300px;
+    width: auto;
+    border-radius: 15px;
+}
+
+.imagenes-dobleLista {
+    display: flex;
+    align-items: center;
+}
+
+.artistico-contenedor .artistico-imagenes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.artistico-contenedor .artistico-imagenes img {
+    height: 300px;
+    width: auto;
+    border-radius: 15px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #3f3c4a;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;  /* Asegura la alineación horizontal de las imágenes */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    display: flex;  /* Asegura que las imágenes se coloquen en una fila horizontal */
+}
+
+.carousel-slide img {
+    width: 100%;  /* Mantiene la imagen dentro del contenedor */
+    height: 300px;  /* Altura fija */
+    object-fit: cover;  /* Mantiene la proporción de la imagen y rellena el contenedor */
+    border-radius: 10px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
 }
