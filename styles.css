@@ -133,6 +133,11 @@ footer h3 {
     display: flex;  /* Asegura que las imágenes se coloquen en una fila horizontal */
 }
 
+.mis-dibujos-grid img{
+    width: auto;  
+    height: 300px;
+}
+
 .carousel-slide img {
     width: 100%;  /* Mantiene la imagen dentro del contenedor */
     height: 300px;  /* Altura fija */
